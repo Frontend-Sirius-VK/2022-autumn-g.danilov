@@ -1,0 +1,22 @@
+{
+  "name": "2022-autumn-g.danilov",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frontend-Sirius-VK/2022-autumn-g.danilov.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Frontend-Sirius-VK/2022-autumn-g.danilov/issues"
+  },
+  "homepage": "https://github.com/Frontend-Sirius-VK/2022-autumn-g.danilov#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
