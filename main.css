@@ -13,6 +13,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 8px;
 }
 
 
@@ -32,6 +33,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 80%;
 }
 
 .search-form {
@@ -45,7 +47,7 @@ header {
     align-items: center;
 }
 
-.search-string{
+.search-string {
     border: 1px solid #cccccc; 
     border-radius: 3px;
     height: 32px;
@@ -69,6 +71,12 @@ header {
     align-items: center;
 }
 
+.left-column {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+}
+
 .bottom {
     margin-top: 100px;
     display: flex;
@@ -77,5 +85,13 @@ header {
 }
 
 
-
+.create-keep-string {
+    border: 1px solid #cccccc; 
+    border-radius: 3px;
+    height: 32px;
+    width: 300px;
+    color: #2C2D2E;
+    font-weight: 400;
+    font-family: 'Roboto';
+}
 

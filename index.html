@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <!-- <header>
             <div class="left-header">
                 <div class="main-menu">
                     <button class="main-menu-button">
@@ -71,31 +71,31 @@
 
         <form class="main">
             <div class="left-column">
-                <div role="button" class="keep-button" aria-label="Заметки">
+                <div role="button" class="keep-button" aria-label="Заметки" style="user-select: none;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path d="M19 6.734c0 4.164-3.75 6.98-3.75 10.266h-1.992c.001-2.079.997-3.826 1.968-5.513.912-1.585 1.774-3.083 1.774-4.753 0-3.108-2.517-4.734-5.004-4.734-2.483 0-4.996 1.626-4.996 4.734 0 1.67.862 3.168 1.774 4.753.971 1.687 1.966 3.434 1.967 5.513h-1.991c0-3.286-3.75-6.103-3.75-10.266 0-4.343 3.498-6.734 6.996-6.734 3.502 0 7.004 2.394 7.004 6.734zm-4 11.766c0 .276-.224.5-.5.5h-5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h5c.276 0 .5.224.5.5zm0 2c0 .276-.224.5-.5.5h-5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h5c.276 0 .5.224.5.5zm-1.701 3.159c-.19.216-.465.341-.753.341h-1.093c-.288 0-.562-.125-.752-.341l-1.451-1.659h5.5l-1.451 1.659z"/>
                     </svg>
                     <span>Заметки</span>
                 </div>
-                <div role="button" class="notifications-button" aria-label="Напоминания">
+                <div role="button" class="notifications-button" aria-label="Напоминания" style="user-select: none;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path d="M15 21c0 1.598-1.392 3-2.971 3s-3.029-1.402-3.029-3h6zm.137-17.055c-.644-.374-1.042-1.07-1.041-1.82v-.003c.001-1.172-.938-2.122-2.096-2.122s-2.097.95-2.097 2.122v.003c.001.751-.396 1.446-1.041 1.82-4.668 2.709-1.985 11.715-6.862 13.306v1.749h20v-1.749c-4.877-1.591-2.193-10.598-6.863-13.306zm-3.137-2.945c.552 0 1 .449 1 1 0 .552-.448 1-1 1s-1-.448-1-1c0-.551.448-1 1-1zm-6.451 16c1.189-1.667 1.605-3.891 1.964-5.815.447-2.39.869-4.648 2.354-5.509 1.38-.801 2.956-.76 4.267 0 1.485.861 1.907 3.119 2.354 5.509.359 1.924.775 4.148 1.964 5.815h-12.903z"/>
                     </svg>
                     <span>Напоминания</span>
                 </div>
-                <div role="button" class="editor-button" aria-label="Изменение ярлыков">
+                <div role="button" class="editor-button" aria-label="Изменение ярлыков" style="user-select: none;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path d="M14.078 7.061l2.861 2.862-10.799 10.798-3.584.723.724-3.585 10.798-10.798zm0-2.829l-12.64 12.64-1.438 7.128 7.127-1.438 12.642-12.64-5.691-5.69zm7.105 4.277l2.817-2.82-5.691-5.689-2.816 2.817 5.69 5.692z"/>
                     </svg>
                     <span>Изменение ярлыков</span>
                 </div>
-                <div role="button" class="archive-button" aria-label="Архив">
+                <div role="button" class="archive-button" aria-label="Архив" style="user-select: none;">
                     <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
                         <path d="M24 23h-24v-15.014l5.477-6.986h13.069l5.454 6.986v15.014zm-2-13h-20v11h20v-11zm-9 5h3l-4 4-4-4h3v-3h2v3zm4.568-12h-11.085l-3.951 5h18.942l-3.906-5z"/>
                     </svg>
                     <span>Архив</span>
                 </div>
-                <div role="button" class="trashcan-button" aria-label="Корзина">
+                <div role="button" class="trashcan-button" aria-label="Корзина" style="user-select: none;">
                     <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
                         <path d="M19 24h-14c-1.104 0-2-.896-2-2v-17h-1v-2h6v-1.5c0-.827.673-1.5 1.5-1.5h5c.825 0 1.5.671 1.5 1.5v1.5h6v2h-1v17c0 1.104-.896 2-2 2zm0-19h-14v16.5c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-16.5zm-9 4c0-.552-.448-1-1-1s-1 .448-1 1v9c0 .552.448 1 1 1s1-.448 1-1v-9zm6 0c0-.552-.448-1-1-1s-1 .448-1 1v9c0 .552.448 1 1 1s1-.448 1-1v-9zm-2-7h-4v1h4v-1z"/>
                     </svg>
@@ -118,7 +118,7 @@
                     </div>
                 </div>
             </div>
-        </form>
-
+        </form> -->
+        <script src="index.js" type="module"></script>
     </body>
 </html>
