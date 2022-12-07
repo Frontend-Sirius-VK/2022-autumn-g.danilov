@@ -8,11 +8,11 @@ export class Keeps {
 
     fetchData() {
         fetch('/keeps').then((response) => response.json())
-                                .then((data) => {
-                                    this.title = data.title;
-                                    this.text = data.text;
+                .then((data) => {
+                    this.title = data.title;
+                    this.text = data.text;
 
-                                    EventBus.emit('questions:got-info', data);
-                                })
+                    EventBus.emit('questions:got-info', data);
+                })
     }
 }

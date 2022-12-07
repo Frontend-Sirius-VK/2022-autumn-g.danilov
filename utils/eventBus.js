@@ -15,7 +15,7 @@ class EventBus {
         this.listeners[eventName].delete(callback);
     }
 
-    emit(eventName, data=null){
+    emit(eventName, data = null){
         if (!this.listeners[eventName]){
             return;
         }

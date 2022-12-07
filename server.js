@@ -4,7 +4,7 @@ const port = process.env.PORT || 3333;
 
 app.use(express.static('.'));
 
-const db = require('database.js');
+const db = require('./database/database.js');
 
 app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, '.', 'index.html'));

@@ -1,6 +1,7 @@
 export class HeaderBlock {
     constructor(parent) {
         this.parent = parent;
+        this.src = '/img/keep.png';
     }
 
     render() {
@@ -20,9 +21,11 @@ export class HeaderBlock {
 
         const emblem = document.createElement('img');
         emblem.classList.add('emblem');
+        emblem.src = this.src;
 
         const keepSpan = document.createElement('span');
         keepSpan.classList.add('keep-span');
+        keepSpan.textContent = 'Keep'
 
         mainMenu.append(mainMenuButton);
         logo.append(emblem, keepSpan);
