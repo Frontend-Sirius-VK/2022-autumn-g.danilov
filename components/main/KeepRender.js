@@ -8,6 +8,7 @@ export class KeepRender {
 
     render(data) {
         this.container = document.createElement('div');
+        this.container.classList.add('main-container');
         data.forEach((keep) => {
             const newKeep = new KeepsBlock(this.container);
             newKeep.render(keep.title, keep.text);
