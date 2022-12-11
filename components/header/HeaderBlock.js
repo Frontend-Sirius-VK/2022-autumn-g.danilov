@@ -1,7 +1,10 @@
 export class HeaderBlock {
     constructor(parent) {
         this.parent = parent;
-        this.src = '/img/keep.png';
+        this.keepSrc = '/img/keep.png';
+        this.searchSrc = '/img/search.svg';
+        this.menuSrc = '/img/menu.svg';
+        this.cancelSrc = '/img/cancel.svg';
     }
 
     render() {
@@ -16,17 +19,22 @@ export class HeaderBlock {
         const mainMenuButton = document.createElement('button');
         mainMenuButton.classList.add('main-menu-button');
 
+        const mainMenuIcon = document.createElement('img');
+        mainMenuIcon.classList.add('menu-svg');
+        mainMenuIcon.src = this.menuSrc;
+
         const logo = document.createElement('div');
         logo.classList.add('keep');
 
         const emblem = document.createElement('img');
         emblem.classList.add('emblem');
-        emblem.src = this.src;
+        emblem.src = this.keepSrc;
 
         const keepSpan = document.createElement('span');
         keepSpan.classList.add('keep-span');
         keepSpan.textContent = 'Keep'
 
+        mainMenuButton.append(mainMenuIcon);
         mainMenu.append(mainMenuButton);
         logo.append(emblem, keepSpan);
         leftHeader.append(mainMenu, logo);
@@ -43,6 +51,10 @@ export class HeaderBlock {
         const deleteSearchButton = document.createElement('button');
         deleteSearchButton.classList.add('delete-search-button');
 
+        const deleteIcon = document.createElement('img');
+        deleteIcon.classList.add('delete-svg');
+        deleteIcon.src = this.cancelSrc;
+
         const searchStringContainer = document.createElement('div');
         searchStringContainer.classList.add('search-string-container');
 
@@ -52,8 +64,14 @@ export class HeaderBlock {
         const searchButton = document.createElement('button');
         searchButton.classList.add('search-button');
 
+        const seacrhIcon = document.createElement('img');
+        seacrhIcon.classList.add('search-svg');
+        seacrhIcon.src = this.searchSrc;
+        
+        deleteSearchButton.append(deleteIcon);
+        searchButton.append(seacrhIcon);
         searchStringContainer.append(searchString);
-        searchForm.append(deleteSearchButton, searchStringContainer, searchButton);
+        searchForm.append(searchButton, searchStringContainer, deleteSearchButton);
         searchContainer.append(searchForm);
         centerHeader.append(searchContainer);
 
@@ -70,5 +88,6 @@ export class HeaderBlock {
         header.append(leftHeader, centerHeader, userHeader);
 
         this.parent.appendChild(header);
+
     }
 }
