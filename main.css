@@ -116,3 +116,8 @@ header {
     font-weight: 400;
     line-height: 1.25rem;
 }
+
+.menu-svg, .delete-svg, .search-svg {
+    height: 24px;
+    width: 24px;
+}

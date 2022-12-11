@@ -13,9 +13,10 @@ export class MainView {
     }
 
     render() {
-        const body = document.querySelector('body');
-        this.header = new HeaderBlock(body);
-        this.keeps = new KeepRender(body);
+        const root = document.querySelector('#root');
+        
+        this.header = new HeaderBlock(root);
+        this.keeps = new KeepRender(root);
 
         this.header.render();
     }
