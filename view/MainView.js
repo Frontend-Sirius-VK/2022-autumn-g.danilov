@@ -1,4 +1,4 @@
-import EventBus from "../utils/eventBus.js";
+import EventBus from "../utils/EventBus.js";
 import { HeaderBlock } from "../components/header/HeaderBlock.js";
 import { KeepRender } from "../components/main/KeepRender.js";
 

@@ -1,4 +1,4 @@
-import EventBus from "../utils/eventBus.js";
+import EventBus from "../utils/EventBus.js";
 
 export class Keeps {
     constructor(title, text) {
