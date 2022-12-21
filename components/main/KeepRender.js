@@ -18,7 +18,7 @@ export class KeepRender {
             this.parent.innerHTML = '';
             const loader = new Loader(this.container);
             loader.render();
-            this.parent.prepend(this.container);
+            this.parent.append(this.container);
             return;
         }
 
@@ -32,6 +32,7 @@ export class KeepRender {
     update(data) {
         if (this.container) {
             this.container.innerHTML = '';
+            this.container.remove();
         }
         this.render(data);
     }
