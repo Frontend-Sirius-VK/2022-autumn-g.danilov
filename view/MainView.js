@@ -9,7 +9,7 @@ export class MainView {
         this.leftColumn = null;
         this.keeps = null;
         
-        EventBus.on('questions:got-info', this.update.bind(this));
+        EventBus.on('keeps:got-info', this.update.bind(this));
     }
 
     render() {
