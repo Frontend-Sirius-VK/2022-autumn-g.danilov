@@ -12,7 +12,7 @@ export class Keeps {
                     this.title = data.title;
                     this.text = data.text;
 
-                    EventBus.emit('questions:got-info', data);
+                    EventBus.emit('keeps:got-info', data);
                 })
     }
 }
