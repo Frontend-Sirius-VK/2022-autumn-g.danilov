@@ -1,4 +1,5 @@
 import {MainController} from '../controllers/MainController.js';
+import EventBus from '../utils/EventBus.js';
 
 const routes = {
     '/': MainController
@@ -7,6 +8,8 @@ const routes = {
 export class Router {
     constructor() {
         this.onDocumentClick = this.onDocumentClick.bind(this);
+        EventBus.off('keeps:got-info');
+        EventBus.off('keep:loading');
     }
 
     onDocumentClick(event) {
