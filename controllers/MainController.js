@@ -8,7 +8,7 @@ export class MainController {
         view.render();
 
         const keeps = new Keeps();
-        EventBus.emit('keeps:loading');
+        EventBus.emit('keep:loading');
         keeps.fetchData();
     }
 }

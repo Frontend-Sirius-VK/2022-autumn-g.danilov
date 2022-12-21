@@ -12,10 +12,14 @@ class EventBus {
         if (!this.listeners[eventName]){
             return;
         }
-        this.listeners[eventName].delete(callback);
+
+        const newListeners = this.listeners[listeners]
+            .filter(listener => listener !== callback);
+
+        this.listeners[eventName] = newListeners;
     }
 
-    emit(eventName, data = null){
+    emit(eventName, data=null){
         if (!this.listeners[eventName]){
             return;
         }

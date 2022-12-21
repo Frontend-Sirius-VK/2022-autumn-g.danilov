@@ -4,18 +4,11 @@ export class Loader {
     }
 
     render() {
-        const mask = document.createElement('div');
-        mask.classList.add('mask');
-        const loader = document.createElement('div');
-        loader.className.add('loader');
-        mask.append(loader);
-
-        window.addEventListener('load', () => {
-            mask.classList.add('hide');
-            setTimeout(() => {
-                mask.remove;
-            }, 600)
-        })
+        const loaderWrap = document.createElement('div');
+        loaderWrap.className = 'loader-wrapper';
+        const loader = document.createElement('span');
+        loader.className = 'loader-wrapper__item';
+        loaderWrap.append(loader);
 
         this.parent.appendChild(loaderWrap);
     }

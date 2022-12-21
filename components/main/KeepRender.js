@@ -1,10 +1,13 @@
 import { KeepsBlock } from "./KeepsBlock.js";
 import { Loader } from "../loader/loader.js";
+import EventBus from "../../utils/EventBus.js";
 
 export class KeepRender {
     constructor(parent) {
         this.parent = parent;
         this.container = null;
+
+        EventBus.on('keep:loading', this.render.bind(this));
     }
 
     render(data) {
