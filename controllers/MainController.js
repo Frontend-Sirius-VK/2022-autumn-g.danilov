@@ -1,6 +1,6 @@
 import { Keeps } from "../models/Keeps.js";
 import { MainView } from "../view/MainView.js";
-
+import  EventBus from "../utils/EventBus.js";
 
 export class MainController {
     process() {
@@ -8,6 +8,7 @@ export class MainController {
         view.render();
 
         const keeps = new Keeps();
+        EventBus.emit('keep:loading');
         keeps.fetchData();
     }
 }

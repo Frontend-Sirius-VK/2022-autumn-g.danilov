@@ -1,3 +1,9 @@
+@import "styles/header.css";
+@import "styles/img.css";
+@import "styles/keep.css";
+@import "styles/loader.css";
+@import "styles/main-container.css";
+
 *{
     margin: 0;
     padding: 0;
@@ -7,117 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    display: flex;
-    border-bottom: 1px solid gainsboro;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
-}
 
 
-.left-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.keep {
-    display: flex;
-    align-items: center;
-}
-
-.center-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-}
-
-.search-form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.buttons {
-    display: flex;
-    align-items: center;
-}
-
-.search-string {
-    border: 1px solid #cccccc; 
-    border-radius: 3px;
-    height: 32px;
-    width: 300px;
-    color: #2C2D2E;
-    font-weight: 400;
-    font-family: 'Roboto';
-}
-
-.main {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-}
-
-.note-container {
-    height: 0%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.left-column {
-    display: flex;
-    flex-direction: column;
-    padding-top: 8px;
-}
-
-.main-container {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 
-.create-keep-string {
-    border: 1px solid #cccccc; 
-    border-radius: 3px;
-    height: 32px;
-    width: 300px;
-    color: #2C2D2E;
-    font-weight: 400;
-    font-family: 'Roboto';
-}
-
-.keep-container {
-    margin: 16px;
-    width: 600px;
-    border: 1px solid transparent;
-    background-color: #fff;
-    border-color: #e0e0e0;
-}
-
-.keep-title {
-    padding: 16px 16px 0px 16px;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5rem;
-}
-
-.keep-text {
-    padding: 4px 16px 12px 16px;
-    font-size: .875rem;
-    font-weight: 400;
-    line-height: 1.25rem;
-}
-
-.menu-svg, .delete-svg, .search-svg {
-    height: 24px;
-    width: 24px;
-}

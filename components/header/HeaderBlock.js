@@ -17,6 +17,7 @@ export class HeaderBlock {
         mainMenu.classList.add('main-menu');
 
         const mainMenuButton = document.createElement('button');
+        mainMenuButton.disabled = true;
         mainMenuButton.classList.add('main-menu-button');
 
         const mainMenuIcon = document.createElement('img');
@@ -49,6 +50,7 @@ export class HeaderBlock {
         searchForm.classList.add('search-form');
 
         const deleteSearchButton = document.createElement('button');
+        deleteSearchButton.disabled = true;
         deleteSearchButton.classList.add('delete-search-button');
 
         const deleteIcon = document.createElement('img');
@@ -59,9 +61,11 @@ export class HeaderBlock {
         searchStringContainer.classList.add('search-string-container');
 
         const searchString = document.createElement('input');
+        searchString.disabled = true;
         searchString.classList.add('search-string');
 
         const searchButton = document.createElement('button');
+        searchButton.disabled = true;
         searchButton.classList.add('search-button');
 
         const seacrhIcon = document.createElement('img');
@@ -80,6 +84,7 @@ export class HeaderBlock {
         userContainer.classList.add('user');
 
         const userButton = document.createElement('button');
+        userButton.disabled = true;
         userButton.classList.add('user-button');
 
         userContainer.append(userButton);

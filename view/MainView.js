@@ -1,4 +1,4 @@
-import EventBus from "../utils/eventBus.js";
+import EventBus from "../utils/EventBus.js";
 import { HeaderBlock } from "../components/header/HeaderBlock.js";
 import { KeepRender } from "../components/main/KeepRender.js";
 
@@ -6,19 +6,20 @@ import { KeepRender } from "../components/main/KeepRender.js";
 export class MainView {
     constructor() {
         this.header = null;
-        this.leftColumn = null;
         this.keeps = null;
         
-        EventBus.on('questions:got-info', this.update.bind(this));
+        EventBus.on('keeps:got-info', this.update.bind(this));
     }
 
     render() {
         const root = document.querySelector('#root');
         
         this.header = new HeaderBlock(root);
-        this.keeps = new KeepRender(root);
 
+        const keepContainer = document.createElement('div');
+        this.keeps = new KeepRender(keepContainer);
         this.header.render();
+        root.append(keepContainer);
     }
 
     update(data = []) {

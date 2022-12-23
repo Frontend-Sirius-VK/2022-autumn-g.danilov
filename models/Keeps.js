@@ -1,4 +1,4 @@
-import EventBus from "../utils/eventBus.js";
+import EventBus from "../utils/EventBus.js";
 
 export class Keeps {
     constructor(title, text) {
@@ -12,7 +12,7 @@ export class Keeps {
                     this.title = data.title;
                     this.text = data.text;
 
-                    EventBus.emit('questions:got-info', data);
+                    EventBus.emit('keeps:got-info', data);
                 })
     }
 }
