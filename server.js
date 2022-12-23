@@ -6,7 +6,7 @@ app.use(express.static('.'));
 
 const db = require('./database/database.js');
 
-app.get('/keeps', async (req, res) => {
+app.get('/api/keeps', async (req, res) => {
     try {
         const result = await db.getKeeps();
         res.json(result);
@@ -15,19 +15,19 @@ app.get('/keeps', async (req, res) => {
     }
 });
 
-app.delete('/delete', async (req, res) => {
+app.delete('/api/delete', async (req, res) => {
     const id = req.params.id;
     const deleteKeep = await db.deleteKeep(id);
     res.json(deleteKeep);
 });
 
-app.post('/create', async (req, res) => {
+app.post('/api/create', async (req, res) => {
     const createKeep = await db.createKeep(req);
     res.json(createKeep);
     return res;
 });
 
-app.put('/edit', async (req, res) => {
+app.put('/api/edit', async (req, res) => {
     const editKeep = await db.editKeep(req);
     res.json(editKeep);
     return res;

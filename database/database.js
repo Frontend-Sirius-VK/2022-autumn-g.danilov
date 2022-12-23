@@ -1,10 +1,10 @@
 const Pool = require('pg').Pool
 const pool = new Pool({
-    user: process.env.POSTGRES_USER,
-    host: process.env.POSTGRES_HOST ?? 'localhost',
-    database: process.env.POSTGRES_DB ,
-    password: process.env.POSTGRES_PASSWORD,
-    port: process.env.POSTGRES_PORT,
+    user: "postgres",
+    password: '123',
+    host: "localhost",
+    port: "5432",
+    database: "keep-db"
 })
 
 async function getKeeps() {
