@@ -6,10 +6,6 @@ app.use(express.static('.'));
 
 const db = require('./database/database.js');
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '.', 'index.html'));
-});
-
 app.get('/keeps', async (req, res) => {
     try {
         const result = await db.getKeeps();

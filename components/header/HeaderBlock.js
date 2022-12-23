@@ -1,10 +1,15 @@
+import keep from "../../img/keep.png";
+import search from "../../img/search.svg";
+import menu from "../../img/menu.svg";
+import cancel from "../../img/cancel.svg";
+
 export class HeaderBlock {
     constructor(parent) {
         this.parent = parent;
-        this.keepSrc = '/img/keep.png';
-        this.searchSrc = '/img/search.svg';
-        this.menuSrc = '/img/menu.svg';
-        this.cancelSrc = '/img/cancel.svg';
+        this.keepSrc = keep;
+        this.searchSrc = search;
+        this.menuSrc = menu;
+        this.cancelSrc = cancel;
     }
 
     render() {
